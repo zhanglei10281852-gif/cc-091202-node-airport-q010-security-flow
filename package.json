@@ -1,0 +1,1 @@
+{"name":"terminal-security-flow-context","version":"0.1.0","private":true,"type":"module","description":"航站楼安检客流领域资料服务","scripts":{"start":"node src/server.js","test":"node --test"},"engines":{"node":">=20"}}
