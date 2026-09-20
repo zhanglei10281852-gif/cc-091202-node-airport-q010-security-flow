@@ -15,12 +15,14 @@ test("领域样例可以解析", async () => {
 });
 
 test("健康接口返回可用状态", async (context) => {
-  const server = buildServer().listen(0, "127.0.0.1");
+  const server = await buildServer();
+  server.listen(0, "127.0.0.1");
   context.after(() => server.close());
   await once(server, "listening");
   const address = server.address();
   const response = await fetch(`http://127.0.0.1:${address.port}/health`);
   assert.equal(response.status, 200);
-  assert.deepEqual(await response.json(), { status: "ok" });
+  const body = await response.json();
+  assert.equal(body.status, "ok");
+  assert.ok(typeof body.asOf === "string");
 });
-

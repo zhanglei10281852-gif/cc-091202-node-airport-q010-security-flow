@@ -5,5 +5,10 @@ services:
       - "${APP_PORT:-3000}:3000"
     environment:
       PORT: 3000
+      STATE_FILE: /data/state.json
+    volumes:
+      - flow-state:/data
     restart: unless-stopped
 
+volumes:
+  flow-state:
