@@ -5,5 +5,10 @@ services:
       - "${APP_PORT:-3000}:3000"
     environment:
       PORT: 3000
+      DATA_DIR: /data
+    volumes:
+      - flow-data:/data
     restart: unless-stopped
 
+volumes:
+  flow-data:

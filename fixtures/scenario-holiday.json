@@ -1,0 +1,52 @@
+{
+  "scenario": "2026 年中秋假期早高峰：T1-EAST 排队骤增，建议 T1-WEST 跨区支援开启闲置通道；含一次迟到更正",
+  "timezone": "Asia/Shanghai",
+  "records": [
+    {"recordType":"walkTime","fromZone":"T1-WEST","toZone":"T1-EAST","minutes":7,"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"walkTime","fromZone":"T1-EAST","toZone":"T1-WEST","minutes":7,"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"walkTime","fromZone":"T1-NORTH","toZone":"T1-EAST","minutes":14,"receivedAt":"2026-09-01T00:00:00+08:00"},
+
+    {"recordType":"lane","lane":"E-01","zone":"T1-EAST","passengersPerMinute":3.2,"open":true,"crewRoles":["XRAY","SCREEN","ASSIST"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"lane","lane":"E-02","zone":"T1-EAST","passengersPerMinute":3.0,"open":true,"crewRoles":["XRAY","SCREEN","ASSIST"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"lane","lane":"E-03","zone":"T1-EAST","passengersPerMinute":3.4,"open":false,"crewRoles":["XRAY","SCREEN","ASSIST"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"lane","lane":"W-01","zone":"T1-WEST","passengersPerMinute":3.2,"open":true,"crewRoles":["XRAY","SCREEN","ASSIST"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"lane","lane":"W-02","zone":"T1-WEST","passengersPerMinute":3.0,"open":true,"crewRoles":["XRAY","SCREEN","ASSIST"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"lane","lane":"W-03","zone":"T1-WEST","passengersPerMinute":2.8,"open":false,"crewRoles":["XRAY","SCREEN","ASSIST"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"lane","lane":"N-01","zone":"T1-NORTH","passengersPerMinute":2.6,"open":true,"crewRoles":["XRAY","SCREEN"],"receivedAt":"2026-09-01T00:00:00+08:00"},
+
+    {"recordType":"staff","staffId":"s-e-xray-1","homeZone":"T1-EAST","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-e-xray-2","homeZone":"T1-EAST","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-e-screen-1","homeZone":"T1-EAST","qualifications":["SCREEN"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-e-screen-2","homeZone":"T1-EAST","qualifications":["SCREEN"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-e-assist-1","homeZone":"T1-EAST","qualifications":["ASSIST"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-e-assist-2","homeZone":"T1-EAST","qualifications":["ASSIST"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+
+    {"recordType":"staff","staffId":"s-w-xray-1","homeZone":"T1-WEST","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"staff-anon-12","homeZone":"T1-WEST","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-xray-3","homeZone":"T1-WEST","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[{"start":"2026-09-12T07:00:00+08:00","end":"2026-09-12T07:40:00+08:00"}],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-screen-1","homeZone":"T1-WEST","qualifications":["SCREEN"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-screen-2","homeZone":"T1-WEST","qualifications":["SCREEN"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[{"start":"2026-09-12T08:00:00+08:00","end":"2026-09-12T08:15:00+08:00"}],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-assist-1","homeZone":"T1-WEST","qualifications":["ASSIST"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-assist-2","homeZone":"T1-WEST","qualifications":["ASSIST"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-assist-only","homeZone":"T1-WEST","qualifications":["ASSIST"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-flex-1","homeZone":"T1-WEST","qualifications":["SCREEN","ASSIST"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-xray-4","homeZone":"T1-WEST","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-w-screen-3","homeZone":"T1-WEST","qualifications":["SCREEN"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-n-xray-1","homeZone":"T1-NORTH","qualifications":["XRAY"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+    {"recordType":"staff","staffId":"s-n-screen-1","homeZone":"T1-NORTH","qualifications":["SCREEN"],"shiftStart":"2026-09-12T06:00:00+08:00","shiftEnd":"2026-09-12T14:00:00+08:00","breaks":[],"receivedAt":"2026-09-01T00:00:00+08:00"},
+
+    {"recordType":"flightWave","waveId":"flt-east-0800","zone":"T1-EAST","departsAt":"2026-09-12T08:00:00+08:00","seats":560,"showRate":1.0,"leadMin":90,"tailMin":20,"receivedAt":"2026-09-11T20:00:00+08:00"},
+    {"recordType":"flightWave","waveId":"flt-east-0940","zone":"T1-EAST","departsAt":"2026-09-12T09:40:00+08:00","seats":300,"showRate":1.0,"leadMin":90,"tailMin":20,"receivedAt":"2026-09-11T20:00:00+08:00"},
+    {"recordType":"flightWave","waveId":"flt-west-0915","zone":"T1-WEST","departsAt":"2026-09-12T09:15:00+08:00","seats":60,"showRate":1.0,"leadMin":90,"tailMin":20,"receivedAt":"2026-09-11T20:00:00+08:00"},
+
+    {"recordType":"override","overrideId":"ovr-north-manual-1","type":"suppress_recommendation","zone":"T1-NORTH","at":"2026-09-12T07:00:00+08:00","until":"2026-09-12T09:00:00+08:00","reason":"北区设备检修，由值班经理人工调度","receivedAt":"2026-09-12T06:55:00+08:00"},
+
+    {"observationId":"obs-east-0710","zone":"T1-EAST","queue":62,"occurredAt":"2026-09-12T07:10:00+08:00","receivedAt":"2026-09-12T07:10:12+08:00","confidence":0.92},
+    {"observationId":"obs-41","zone":"T1-EAST","queue":86,"occurredAt":"2026-09-12T07:20:00+08:00","receivedAt":"2026-09-12T07:20:05+08:00","confidence":0.91},
+    {"observationId":"obs-41-r1","corrects":"obs-41","zone":"T1-EAST","queue":72,"occurredAt":"2026-09-12T07:20:00+08:00","receivedAt":"2026-09-12T07:31:00+08:00","confidence":0.97},
+    {"observationId":"obs-east-0740","zone":"T1-EAST","queue":96,"occurredAt":"2026-09-12T07:40:00+08:00","receivedAt":"2026-09-12T07:40:09+08:00","confidence":0.9},
+    {"observationId":"obs-west-0710","zone":"T1-WEST","queue":24,"occurredAt":"2026-09-12T07:10:00+08:00","receivedAt":"2026-09-12T07:10:40+08:00","confidence":0.42},
+    {"observationId":"obs-west-0720","zone":"T1-WEST","queue":15,"occurredAt":"2026-09-12T07:20:00+08:00","receivedAt":"2026-09-12T07:20:11+08:00","confidence":0.88},
+    {"observationId":"obs-west-0740","zone":"T1-WEST","queue":9,"occurredAt":"2026-09-12T07:40:00+08:00","receivedAt":"2026-09-12T07:40:10+08:00","confidence":0.86}
+  ]
+}
